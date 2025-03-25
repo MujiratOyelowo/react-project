@@ -1,0 +1,118 @@
+//custom color variables
+$brand-red: #8B0000;
+$brand-green: #228B22;
+$brand-gold: #DAA520;
+$brand-off-white: #F5F5DC;
+
+.app-container {
+    background-color: $brand-off-white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    min-height: 80px;
+}
+
+.custom-navbar-brand {
+    flex: 0 0 30%;  
+    background-color: $brand-red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.custom-navbar-links {
+    flex: 0 0 70%;
+    background-color: $brand-green;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.custom-nav-link{
+    display: flex;
+    gap: 7rem;
+}
+
+/* Container for the carousel that holds the background images */
+.header-carousel-container {
+    position: relative;
+}
+  
+  /* Style for each carousel images */
+.header-carousel-image {
+    height: 300px;
+    object-fit: cover;
+}
+  
+.header-container{
+    // padding-top: 80px;
+    border-bottom: 2px solid $brand-gold;
+    margin: 80px auto 1rem auto;;
+}
+
+.header-text{
+    color: $brand-red;
+    margin-bottom: 1rem;
+}
+
+.header-button{
+    background-color: $brand-green !important;
+    border: 1px solid $brand-gold !important;
+    border-radius: 4px !important;
+    padding: 0.5rem 1rem !important;
+    margin-top: 8rem;
+}
+.footer-card {
+    border: 2px solid $brand-gold !important;
+    background-color: $brand-off-white !important; 
+}
+
+.footer-card-text, .footer-card-title{
+    color: $brand-red !important;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: $brand-green;
+    &:hover {
+        color: $brand-red;
+    }
+}
+
+.footer-bottom {
+    background-color: $brand-green; 
+    padding: 1rem 0;         
+    color: #fff;            
+}
+
+.footer-button{
+    background-color: $brand-green !important;
+    border: 1px solid $brand-gold !important;
+    border-radius: 4px !important;
+    margin-left: 5px;
+}
+
+.form-stroke {
+    border: 2px solid $brand-gold !important;
+    border-radius: 4px;  
+}  
+
+.custom-navbar-top .navbar-brand, 
+.custom-navbar-top .nav-link {
+  color: #fff !important;   
+}
+
+.custom-navbar-top .nav-link:hover {
+  color: $brand-gold !important; 
+}

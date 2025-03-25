@@ -1,0 +1,76 @@
+// Footer.js
+import React from "react";
+import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import "../styling/custom.scss";
+
+function Footer() {
+  return (
+    <footer className="footer-container">
+      <Container>
+        {/* Top Row: 3 Columns */}
+        <Row>
+          <Col md={4} className="mb-4">
+            <Card className="h-100 p-3 footer-card">
+              <Card.Title className="footer-card-title">Contact Us</Card.Title>
+              <Card.Text className="footer-card-text">
+                <Link to="/contact" className="footer-link">
+                  Click here
+                </Link>{" "}
+                for more info.<br />
+                You can also follow us on various social media.
+              </Card.Text>
+            </Card>
+          </Col>
+
+          <Col md={4} className="mb-4">
+            <Card className="h-100 p-3 footer-card">
+              <Card.Title className="footer-card-title">Opening Hours</Card.Title>
+              <Card.Text className="footer-card-text">
+                Monday - Saturday<br />
+                10 AM - 10 PM<br />
+                <br />
+                Sunday<br />
+                11 AM - 8 PM
+              </Card.Text>
+            </Card>
+          </Col>
+
+          <Col md={4} className="mb-4">
+            <Card className="h-100 p-3 footer-card">
+              <Card.Title className="footer-card-title">Newsletter</Card.Title>
+              <Card.Text className="footer-card-text">
+                Get our offers first, subscribe now!
+              </Card.Text>
+              <Form>
+                <Form.Group controlId="newsletterEmail" className="d-flex">
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter your email"
+                    className="form-stroke"
+                  />
+                  <Button variant="success" type="submit" className="footer-button">
+                    Subscribe
+                  </Button>
+                </Form.Group>
+              </Form>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+
+      {/* Bottom Green Section */}
+      <div className="footer-bottom">
+        <Container>
+          <Row>
+            <Col className="text-center">
+              <p className="mb-0">© 2025 Peaks & Spice</p>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
