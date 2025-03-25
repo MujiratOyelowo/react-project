@@ -2,6 +2,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 import "../styling/custom.scss";
 
 function Footer() {
@@ -17,8 +18,15 @@ function Footer() {
                 <Link to="/contact" className="footer-link">
                   Click here
                 </Link>{" "}
-                for more info.<br />
-                You can also follow us on various social media.
+                for more info.
+                <br />
+                {/* Social Media Icons */}
+                <div className="social-icons" style={{ marginTop: "1rem" }}>
+                  <FaFacebook className="icon" />
+                  <FaInstagram className="icon" />
+                  <FaYoutube className="icon" />
+                  <FaTwitter className="icon" />
+                </div>
               </Card.Text>
             </Card>
           </Col>
@@ -49,7 +57,11 @@ function Footer() {
                     placeholder="Enter your email"
                     className="form-stroke"
                   />
-                  <Button variant="success" type="submit" className="footer-button">
+                  <Button
+                    variant="success"
+                    type="submit"
+                    className="footer-button"
+                  >
                     Subscribe
                   </Button>
                 </Form.Group>
