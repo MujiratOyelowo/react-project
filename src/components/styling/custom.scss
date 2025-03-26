@@ -73,6 +73,14 @@ $brand-off-white: #F5F5DC;
     padding: 0.5rem 1rem !important;
     margin-top: 8rem;
 }
+
+.menu-box {
+    border: 2px solid #daa520; // gold border
+    background-color: #f5f5dc; // off-white
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
 .footer-card {
     border: 2px solid $brand-gold !important;
     background-color: $brand-off-white !important; 
