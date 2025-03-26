@@ -9,7 +9,7 @@ function Navigation() {
       {/* LEFT (Red) */}
       <div className="custom-navbar-brand">
         <Link to="/" style={{ color: "#fff", textDecoration: "none" }}>
-          <h2 style={{ margin: 0 }}>Peaks & Spices</h2>
+          <h2 className="custom-navbar-brand-text" style={{ margin: 0 }}>Peaks & Spices</h2>
         </Link>
       </div>
 

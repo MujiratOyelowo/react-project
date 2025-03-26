@@ -4,6 +4,13 @@ $brand-green: #228B22;
 $brand-gold: #DAA520;
 $brand-off-white: #F5F5DC;
 
+@font-face {
+    font-family: 'Jua';
+    src: url('../../assets/fonts/Jua-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 .app-container {
     background-color: $brand-off-white;
     min-height: 100vh;
@@ -39,6 +46,10 @@ $brand-off-white: #F5F5DC;
     padding: 1rem;
 }
 
+.custom-navbar-brand-text{
+    font-family: 'Jua', sans-serif;
+}
+
 .custom-nav-link{
     display: flex;
     gap: 7rem;
@@ -64,6 +75,7 @@ $brand-off-white: #F5F5DC;
 .header-text{
     color: $brand-red;
     margin-bottom: 1rem;
+    font-family: 'Jua', sans-serif;
 }
 
 .header-button{
@@ -73,6 +85,16 @@ $brand-off-white: #F5F5DC;
     padding: 0.5rem 1rem !important;
     margin-top: 8rem;
 }
+
+//home page styling
+.home-card {
+    border-style: solid;
+    border-width: 2px 0; /* top/bottom: 2px, left/right: 0 */
+    border-color: $brand-gold;
+    margin: 10px auto 1rem auto;
+}
+
+
 .footer-card {
     border: 2px solid $brand-gold !important;
     background-color: $brand-off-white !important; 
@@ -80,6 +102,10 @@ $brand-off-white: #F5F5DC;
 
 .footer-card-text, .footer-card-title{
     color: $brand-red !important;
+}
+
+.footer-card-title, .home-title{
+    font-family: 'Jua', sans-serif;
 }
 
 .footer-link{
