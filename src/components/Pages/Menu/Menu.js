@@ -5,7 +5,9 @@ import MenuSections from "./MenuSections";
 function Menu() {
   return (
     <div style={{ padding: "2rem" }}>
-      <h1 style={{ color: "#8B0000", textAlign: "center" }}>Menu</h1>
+      <div className="heading-line">
+        <h1 className="menu-header">Menu</h1>
+      </div>
       <MenuSections />
     </div>
   );
