@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
 import Home from "./components/Pages/Home";
-import Menu from "./components/Pages/Menu";
+import Menu from "./components/Pages/Menu/Menu";
 import Reservation from "./components/Pages/Reservation";
 import Contact from "./components/Pages/Contact";
 import About from "./components/Pages/About";

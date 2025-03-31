@@ -90,6 +90,73 @@ $brand-off-white: #F5F5DC;
     margin-top: 8rem;
 }
 
+.menu-box {
+    border: 2px solid #daa520; // gold border
+    background-color: #f5f5dc; // off-white
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  .menu-category-heading, .menu-header{
+    font-family: 'Jua', sans-serif;
+    color: $brand-red;
+  }
+  .heading-line {
+    position: relative;
+    width: 100%;
+    text-align: center;  // center the heading horizontally
+    margin: 2rem 0;      // spacing above/below
+  
+    // The horizontal line behind the heading
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        width: 92.5%;              // or 400px, etc.
+        margin: 0 auto;          // horizontally center the line
+        height: 2px;
+        background-color: $brand-gold;
+        z-index: 0;
+        transform: translateY(-50%);
+    }
+  
+    // The heading inside
+    .menu-header {
+      position: relative;
+      display: inline-block;            // shrink to text width
+      background-color: $brand-off-white; // so it “cuts out” the line behind
+      padding: 0 1rem;                  // horizontal padding
+      margin: 0;                        // remove default <h1> margins
+      z-index: 1;                       // in front of the pseudo‐element
+    }
+  }
+  
+
+.menu-size{
+    color: $brand-green !important;
+}
+
+.menu-extras, .menu-item{
+    color: $brand-red !important;
+}
+
+.menu-price{
+    color: $brand-gold !important;
+}
+
+.table {
+    background-color: transparent !important;
+    color: $brand-red !important;
+  
+td, th {
+    background-color: transparent !important;
+    vertical-align: middle;
+    padding: 0.75rem;
+    }
+  }
+  
 //home page styling
 .text-muted{
     color: $brand-red !important;
