@@ -172,6 +172,29 @@ td, th {
     border-bottom: 2px solid $brand-gold;
     margin: 80px auto 1rem auto;;
 }
+
+//about us page styling
+.about-card {
+    border: 2px solid $brand-gold !important;
+    background-color: $brand-off-white !important;
+    border-radius: 4px;
+  }
+  
+  .about-card-title {
+    font-family: 'Jua', sans-serif;
+    color: $brand-red !important;
+  }
+  
+  .about-card-text {
+    color: #000 !important;
+  }
+  
+  .line-separator {
+    border-bottom: 2px solid $brand-gold;
+    margin: 80px auto 1rem auto;;
+  }
+
+// The footer styles
 .footer-card, .home-card {
     border: 2px solid $brand-gold !important;
     background-color: $brand-off-white !important; 
