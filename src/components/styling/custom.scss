@@ -67,7 +67,6 @@ $brand-off-white: #F5F5DC;
 }
   
 .header-container{
-    // padding-top: 80px;
     border-bottom: 2px solid $brand-gold;
     margin: 80px auto 1rem auto;;
 }
@@ -86,32 +85,46 @@ $brand-off-white: #F5F5DC;
     margin-top: 8rem;
 }
 
-.menu-box {
-    border: 2px solid #daa520; // gold border
-    background-color: #f5f5dc; // off-white
+.menu-box, .reservation-container {
+    border: 2px solid #daa520;
+    background-color: #f5f5dc; 
     padding: 1rem;
     border-radius: 4px;
   }
   
-  .menu-category-heading, .menu-header{
+  .reservation-container{
+    margin: 5rem;
+  }
+
+// Hide the feedback icon (like checkmark or red exclamation)
+.was-validated .form-control:valid,
+.form-control.is-valid,
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  background-image: none !important;
+  padding-right: 1rem !important; // Reset space taken by the icon
+}
+
+    
+
+  .menu-category-heading, .menu-header, .reservation-heading {
     font-family: 'Jua', sans-serif;
     color: $brand-red;
   }
   .heading-line {
     position: relative;
     width: 100%;
-    text-align: center;  // center the heading horizontally
-    margin: 2rem 0;      // spacing above/below
-  
-    // The horizontal line behind the heading
+    text-align: center;  
+    margin: 2rem 0;     
+
     &::before {
         content: "";
         position: absolute;
         top: 50%;
         left: 0;
         right: 0;
-        width: 92.5%;              // or 400px, etc.
-        margin: 0 auto;          // horizontally center the line
+        width: 92.5%;              
+        margin: 0 auto;          
         height: 2px;
         background-color: $brand-gold;
         z-index: 0;
@@ -121,11 +134,11 @@ $brand-off-white: #F5F5DC;
     // The heading inside
     .menu-header {
       position: relative;
-      display: inline-block;            // shrink to text width
-      background-color: $brand-off-white; // so it “cuts out” the line behind
-      padding: 0 1rem;                  // horizontal padding
-      margin: 0;                        // remove default <h1> margins
-      z-index: 1;                       // in front of the pseudo‐element
+      display: inline-block;           
+      background-color: $brand-off-white; 
+      padding: 0 1rem;                  
+      margin: 0;                        
+      z-index: 1;                       
     }
   }
   
@@ -153,15 +166,51 @@ td, th {
     }
   }
   
+.reservation-button{
+    background-color: $brand-green !important;
+    border: 1px solid $brand-gold !important;
+    border-radius: 4px !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.reservation-input{
+    background-color: $brand-off-white !important;
+    border: 1px solid $brand-gold !important;
+    border-radius: 4px !important;
+}
+
+.icon-floating-group {
+    position: relative;
+  
+    .floating-icon {
+      position: absolute;
+      top: 50%;
+      right: 0.75rem;       
+      left: auto;           
+      transform: translateY(-50%);
+      z-index: 2;
+      pointer-events: none; 
+    }
+  
+    .icon-field {
+      padding-right: 2.5rem !important; 
+      padding-left: 0.75rem !important;
+    }
+  }
+  
+
 //home page styling
 .home-card {
     border-style: solid;
-    border-width: 2px 0; /* top/bottom: 2px, left/right: 0 */
+    border-width: 2px 0;
     border-color: $brand-gold;
     margin: 10px auto 1rem auto;
 }
 
-
+.date-label{
+    background-color: $brand-off-white !important;
+    border: none !important;
+}
 .footer-card {
     border: 2px solid $brand-gold !important;
     background-color: $brand-off-white !important; 

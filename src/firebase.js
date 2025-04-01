@@ -9,8 +9,8 @@ const firebaseConfig = {
   projectId: "website-assignment-336da",
   storageBucket: "website-assignment-336da.firebasestorage.app",
   messagingSenderId: "251346372536",
-  appId: "1:251346372536:web:595cbc111a2d40eca6f14d",
-  measurementId: "G-0X6TL3BWR2"
+  appId: "1:251346372536:web:1bd413585dd19593a6f14d",
+  measurementId: "G-VN1P2DXG8W"
 };
 
 // Initialize Firebase

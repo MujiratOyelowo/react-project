@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Container } from 'react-bootstrap';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
 import Home from "./components/Pages/Home";
@@ -25,6 +27,7 @@ function App() {
         <Route path="about" element={<About />}/>
       </Routes>
       <Footer />
+      <ToastContainer />
       </div>
     </>
   );
