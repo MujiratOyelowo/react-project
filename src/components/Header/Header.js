@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../styling/custom.scss";
 
-// Import images (adjust the paths accordingly)
+// Importing images
 import DalBhat from "../../assets/images/Nepalese/Dal-Bhat.jpg";
 import JollofRice from "../../assets/images/Nigerian/Jollof-Rice.jpg";
 import Momos from "../../assets/images/Nepalese/steamed-momos-wontons.jpg";

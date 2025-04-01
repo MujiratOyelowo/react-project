@@ -28,6 +28,9 @@ function Navigation() {
           <Nav.Link as={Link} to="/about" style={{ color: "#fff" }}>
             About
           </Nav.Link>
+          <Nav.Link as={Link} to="/admin" style={{ color: "#fff" }}>
+            Admin
+          </Nav.Link>
         </Nav>
       </div>
     </div>

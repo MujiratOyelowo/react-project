@@ -1,4 +1,3 @@
-// Footer.js
 import React from "react";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";

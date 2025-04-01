@@ -83,6 +83,22 @@
         {"name": "Peppered Plantain Chips", "small": "$2.99", "medium": "$4.99", "large": "$6.99", "extras": "Extra Pepper +$0.99"},
         {"name": "Tuwon Madara (Milk Custard)", "small": "$3.99", "medium": "$5.99", "large": "$7.99", "extras": "Groundnut Topping +$0.99"}
       ]
+    },
+    "specials": [
+    {
+      "name": "Thukpa",
+      "img": "/assets/images/Thupka.jpg",
+      "desc": "Thukpa is a warming Himalayan bowl of tender noodles immersed in a spice-kissed broth, where every sip and bite beautifully unfolds ancient mountain tales and comforting flavors with artful simplicity."
+    },
+    {
+      "name": "Fusion",
+      "img": "/assets/images/fusion.jpg",
+      "desc": "This culinary showcase dazzles with a vibrant West African spread of jollof rice, crispy plantains, tender fufu and a richly spiced stew, embodying deep-rooted tradition and soulful comfort, alongside an enchanting Himalayan platter featuring artfully pinched momos cradling golden lentil soup with a spicy, tangy dipping sauce, reflecting exquisite craftsmanship and a delicate balance of heritage and innovation, undeniably captivating."
+    },
+    {
+      "name": "Ofada",
+      "img": "/assets/images/ofada.jpeg",
+      "desc": "Ofada rice, a cherished Nigerian delicacy, boasts a nutty aroma and deep flavor, perfectly paired with a spicy, richly textured sauce; its unique, artisanal preparation embodies tradition and culinary passion."
     }
-  }
-  
+  ]
+}

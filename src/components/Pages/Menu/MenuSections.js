@@ -1,13 +1,24 @@
-// MenuSections.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import menuData from "./MenuData";
+import axios from "axios";
 import "../../styling/custom.scss";
 
-// Updated data structure with detailed pricing
-
 function MenuSections() {
+  const [menuData, setMenuData] = useState(null);
   const [activeCategory, setActiveCategory] = useState("fusion");
+
+  useEffect(() => {
+    // Fetching the JSON file from the public folder
+    axios.get("/MenuData.json")
+      .then((response) => {
+        setMenuData(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching menu data:", error);
+      });
+  }, []);
+
+  if (!menuData) return <div>Loading menu data...</div>;
 
   // Toggle category: clicking the same category will collapse it.
   const handleCategoryClick = (categoryKey) => {
@@ -32,10 +43,7 @@ function MenuSections() {
                 }}
                 onClick={() => handleCategoryClick(key)}
               >
-                <h3
-                  className="menu-category-heading"
-                  style={{ marginBottom: 0 }}
-                >
+                <h3 className="menu-category-heading" style={{ marginBottom: 0 }}>
                   {category.title}
                 </h3>
               </Col>
@@ -49,7 +57,7 @@ function MenuSections() {
             <Col md={10}>
               <div className="table-responsive">
                 <table className="table table-hover text-center">
-                  <thead className="">
+                  <thead>
                     <tr>
                       <th></th>
                       <th className="menu-size">Small</th>

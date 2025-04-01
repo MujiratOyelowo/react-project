@@ -1,8 +1,7 @@
-// Reservation.js
 import React, { useState } from "react";
 import { db } from "../../firebase"; 
 import { collection, addDoc } from "firebase/firestore";
-import { toast } from "react-toastify";
+import { toast } from "react-toastify"; //to display success or error message
 import { Container, Form, Button, FloatingLabel } from "react-bootstrap";
 import {
   FaUser,
@@ -14,7 +13,7 @@ import {
 import "../styling/custom.scss";
 
 function Reservation() {
-  // Local state for each form field
+  // Local state for each form field and validation
   const [fullName, setFullName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -35,7 +34,7 @@ function Reservation() {
       return;
     }
     try {
-      // Save the data to Firestore
+      // Saving the data to Firestore
       await addDoc(collection(db, "reservations"), {
         fullName,
         phoneNumber,
@@ -47,7 +46,7 @@ function Reservation() {
         createdAt: new Date(),
       });
 
-      // Clear the form
+      // Clearing the form
       setFullName("");
       setPhoneNumber("");
       setEmail("");
@@ -57,11 +56,11 @@ function Reservation() {
       setSpecialRequests("");
       setValidated(false);
 
-      // Trigger a success toast
+      // Triggering a success toast
       toast.success("Your reservation has been submitted successfully!", {
         position: "top-center",
       });
-    } catch (error) {
+    } catch (error) { //if an error occured
       console.error("Error saving reservation: ", error);
       toast.error("Something went wrong. Please try again.", {
         position: "top-center",
