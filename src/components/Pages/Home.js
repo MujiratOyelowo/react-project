@@ -83,10 +83,10 @@ function Home() {
       </Row>
       
       {/* Horizontal line below the Intro Section */}
-      <hr className= "line-base" style={{ borderTop: "2px solid #951b1c", width: "80%", margin: "0 auto 2rem" }} />
+      <div className="line-separator"></div>
 
       {/* Today's Specials Section */}
-      <h2 className="text-center mb-4 today-special" style={{ color: "#951b1c", fontWeight: "bold" }}>
+      <h2 className="text-center mb-4 today-special">
         Today's Specials
       </h2>
       <Row className="justify-content-center">

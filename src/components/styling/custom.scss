@@ -98,23 +98,17 @@ $brand-off-white: #F5F5DC;
   
   .reservation-container{
     margin: 5rem;
-  }
-
-// Hide the feedback icon (like checkmark or red exclamation)
-.was-validated .form-control:valid,
-.form-control.is-valid,
-.was-validated .form-control:invalid,
-.form-control.is-invalid {
-  background-image: none !important;
-  padding-right: 1rem !important; // Reset space taken by the icon
-}
-
-    
+  } 
 
   .menu-category-heading, .menu-header, .reservation-heading {
     font-family: 'Jua', sans-serif;
     color: $brand-red;
   }
+
+.today-special{
+  color: $brand-red !important;
+}
+
   .heading-line {
     position: relative;
     width: 100%;
@@ -220,7 +214,7 @@ td, th {
 }
 // .footer-card {
 .line-base {
-    border-bottom: 2px solid $brand-gold;
+    border-bottom: solid $brand-gold;
     margin: 80px auto 1rem auto;;
 }
 
@@ -241,7 +235,7 @@ td, th {
   }
   
   .line-separator {
-    border-bottom: 2px solid $brand-gold;
+    border-bottom:  solid $brand-gold;
     margin: 80px auto 1rem auto;;
   }
 

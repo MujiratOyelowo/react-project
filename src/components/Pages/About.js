@@ -99,7 +99,7 @@ function About() {
       </Row>
 
       {/* Horizontal line separator that spans the full width */}
-      <hr className="line-separator" />
+      <div className="heading-line"></div>
     </Container>
   );
 }
