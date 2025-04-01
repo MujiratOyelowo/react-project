@@ -56,6 +56,10 @@ $brand-off-white: #F5F5DC;
 }
 
 /* Container for the carousel that holds the background images */
+
+.p, .text-special {
+    color:$brand-red;
+}
 .header-carousel-container {
     position: relative;
 }
@@ -200,6 +204,9 @@ td, th {
   
 
 //home page styling
+.text-muted{
+    color: $brand-red !important;
+}
 .home-card {
     border-style: solid;
     border-width: 2px 0;
@@ -212,6 +219,34 @@ td, th {
     border: none !important;
 }
 .footer-card {
+.line-base {
+    border-bottom: 2px solid $brand-gold;
+    margin: 80px auto 1rem auto;;
+}
+
+//about us page styling
+.about-card {
+    border: 2px solid $brand-gold !important;
+    background-color: $brand-off-white !important;
+    border-radius: 4px;
+  }
+  
+  .about-card-title {
+    font-family: 'Jua', sans-serif;
+    color: $brand-red !important;
+  }
+  
+  .about-card-text {
+    color: #000 !important;
+  }
+  
+  .line-separator {
+    border-bottom: 2px solid $brand-gold;
+    margin: 80px auto 1rem auto;;
+  }
+
+// The footer styles
+.footer-card, .home-card {
     border: 2px solid $brand-gold !important;
     background-color: $brand-off-white !important; 
 }
@@ -220,7 +255,7 @@ td, th {
     color: $brand-red !important;
 }
 
-.footer-card-title, .home-title{
+.footer-card-title, .home-title, .today-special, .special-title{
     font-family: 'Jua', sans-serif;
 }
 
