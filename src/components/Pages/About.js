@@ -68,8 +68,8 @@ function About() {
                 At “Peaks &amp; Spice,” we believe that food is a universal language that transcends borders 
                 and at the core of every great dish is the shared human experience. Our menu is a reflection 
                 of the culinary traditions of both Nepal and Nigeria, interwoven in ways that highlight the 
-                harmony between these distinct flavors. We’re more than a restaurant; we’re a testament to the 
-                transformative power of cultural exchange, and we invite you to join us on this gastronomic journey.
+                harmony between these distinct flavors. We’re a testament to the transformative power of 
+                cultural exchange, and we invite you to join us on this gastronomic journey.
               </Card.Text>
             </Card.Body>
           </Card>

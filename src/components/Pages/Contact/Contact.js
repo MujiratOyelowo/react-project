@@ -3,7 +3,7 @@ import { db } from "../../../firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { toast } from "react-toastify";
 import MapComponent from "../../Map/Map";
-import ContactInfo from "./ContactInfo"; // Importing the contact info component
+import ContactInfo from "./ContactInfo";
 import { Container, Row, Col, Form, FloatingLabel, Button } from "react-bootstrap";
 import { FaUser, FaEnvelope, FaClipboard, FaComment } from "react-icons/fa";
 import "../../styling/custom.scss";
@@ -37,7 +37,7 @@ function Contact() {
         createdAt: new Date(),
       });
 
-      // Clearing the form and reset validation
+      // Clearing the form and resetting validation
       setName("");
       setEmail("");
       setSubject("");

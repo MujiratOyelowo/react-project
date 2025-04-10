@@ -19,7 +19,7 @@ function Footer() {
                 </Link>{" "}
                 for more info.
                 <br />
-                You  can also follow us in our 
+                You can also follow us in our 
                 social media pages below
                 <br />
                 {/* Social Media Icons */}

@@ -1,9 +1,14 @@
-import React from "react";
-import { Nav } from "react-bootstrap";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styling/custom.scss";
 
 function Navigation() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="navbar-container">
       {/* LEFT (Red) */}
@@ -13,25 +18,22 @@ function Navigation() {
         </Link>
       </div>
 
+      {/* Hamburger Menu Button */}
+      <div className="hamburger-menu" onClick={toggleMenu}>
+        <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+        <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+        <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+      </div>
+
       {/* RIGHT (Green) */}
-      <div className="custom-navbar-links">
-        <Nav className="custom-nav-link">
-          <Nav.Link as={Link} to="/menu" style={{ color: "#fff" }}>
-            Menu
-          </Nav.Link>
-          <Nav.Link as={Link} to="/reservation" style={{ color: "#fff" }}>
-            Reservation
-          </Nav.Link>
-          <Nav.Link as={Link} to="/contact" style={{ color: "#fff" }}>
-            Contact Us
-          </Nav.Link>
-          <Nav.Link as={Link} to="/about" style={{ color: "#fff" }}>
-            About
-          </Nav.Link>
-          <Nav.Link as={Link} to="/admin" style={{ color: "#fff" }}>
-            Admin
-          </Nav.Link>
-        </Nav>
+      <div className={`custom-navbar-links ${isMenuOpen ? 'open' : ''}`}>
+        <div className="custom-nav-link">
+          <Link to="/menu" className="nav-item">Menu</Link>
+          <Link to="/reservation" className="nav-item">Reservation</Link>
+          <Link to="/contact" className="nav-item">Contact Us</Link>
+          <Link to="/about" className="nav-item">About</Link>
+          <Link to="/admin" className="nav-item">Admin</Link>
+        </div>
       </div>
     </div>
   );
