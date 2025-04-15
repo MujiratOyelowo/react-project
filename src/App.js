@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Container } from 'react-bootstrap';
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Navigation from "./components/Navigation/Navigation";
@@ -8,6 +7,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Pages/Home";
 import Menu from "./components/Pages/Menu/Menu";
 import Reservation from "./components/Pages/Reservation";
+import Events from "./components/Pages/Events";
 import Contact from "./components/Pages/Contact/Contact";
 import About from "./components/Pages/About";
 import Admin from "./components/Pages/Admin";
@@ -24,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="menu" element={<Menu />}/>
         <Route path="reservation" element={<Reservation />}/>
+        <Route path="events" element={<Events />}/>
         <Route path="contact" element={<Contact/>}/>
         <Route path="about" element={<About />}/>
         <Route path="admin" element={<Admin />}/>

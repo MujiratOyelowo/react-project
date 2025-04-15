@@ -1,0 +1,116 @@
+[
+    {
+    "id": 1,
+    "title": "Momo Meets Moimoi Soiree",
+    "date": "June 15, 2025",
+    "time": "7:00 PM - 9:00 PM",
+    "location": "Main Dining Room",
+    "description": "An innovative Soiree where Nepalese momos pair with Nigerian moimoi, merging culinary techniques from two distinct cultures in a delicious creative showcase.",
+    "imageUrl": "assets/images/soiree.png",
+    "price": "$45 per person",
+    "capacity": 30,
+    "registrationRequired": true,
+    "whatToExpect": [
+      "Delicious fusion dishes",
+      "Interactive cooking demonstrations",
+      "Traditional Nepalese and Nigerian cuisine",
+      "Cultural performances",
+      "Wine and beverage pairing"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Heritage & Harmony Workshop",
+    "date": "Every Saturday",
+    "time": "6:30 PM - 9:30 PM",
+    "location": "Chef's Kitchen",
+    "description": "Discover the secrets behind our fusion flavors in this interactive cooking workshop. Learn traditional Nepalese techniques and Nigerian spice blends from our chefs, and take home recipes to recreate the magic.",
+    "imageUrl": "assets/images/cooking.jpg",
+    "price": "$85 per person",
+    "capacity": 10,
+    "registrationRequired": true,
+    "whatToExpect": [
+      "Hands-on cooking experience",
+      "Traditional Nepalese and Nigerian cuisine",
+      "Recipe development",
+      "Cultural insights",
+      "Take-home recipe booklet"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Heritage Rhythm & Dine",
+    "date": "Every Sunday",
+    "time": "7:00 PM - 11:00 PM",
+    "location": "Garden Room",
+    "description": "Enjoy an unforgettable night of fusion dining paired with live performances that blend Nepalese folk tunes with Nigerian rhythms. This recurring event brings a dynamic vibe every weekend.",
+    "imageUrl": "assets/images/performance.jpg",
+    "price": "$35 per person (on a first-come, first-serve basis)",
+    "capacity": 50,
+    "registrationRequired": false,
+    "whatToExpect": [
+      "Fusion dining experience",
+      "Live performances",
+      "Cultural fusion",
+      "Diverse music and dance",
+      "Community gathering"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Spice & Heritage Night",
+    "date": "Every Friday",
+    "time": "07:00 PM - 11:30 PM",
+    "location": "Outdoor Patio",
+    "description": "Immerse yourself in a vibrant evening of live drumming, traditional dance, and fusion dining—where the heart of Nepalese heritage meets the bold spirit of Nigerian Afrobeat.",
+    "imageUrl": "assets/images/heritage.png",
+    "price": "$65 per person",
+    "capacity": 50,
+    "registrationRequired": true,
+    "whatToExpect": [
+      "Live drumming and dance",
+      "Fusion dining",
+      "Traditional and modern music",
+      "Cultural performances",
+      "Afrobeat vibe"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Flavors of the World Festival",
+    "date": "April 25, 2025",
+    "time": "9:00 AM - 11:00 PM",
+    "location": "Lounge",
+    "description": "Celebrate an immersive day-long festival bursting with multicultural flair. Enjoy interactive food stations, live cultural performances, and a lively atmosphere that highlights the best of our culinary fusion.",
+    "imageUrl": "assets/images/festival.jpg",
+    "price": "No cover charge",
+    "capacity": 150,
+    "registrationRequired": false,
+    "whatToExpect": [
+      "Multicultural food stations",
+      "Live cultural performances",
+      "Interactive activities",
+      "Festival atmosphere",
+      "Cultural exchange"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Fusion Feast Fiesta",
+    "date": "July 15, 2025",
+    "time": "6:00 PM - 9:00 PM",
+    "location": "Outdoor Patio",
+    "description": "Celebrate the rich tapestry of Nepalese spices and Nigerian flavors in a night of fusion delights, featuring special tasting menus and live traditional music.",
+    "imageUrl": "assets/images/feast.png",
+    "price": "$55 per person",
+    "capacity": 40,
+    "registrationRequired": true,
+    "whatToExpect": [
+      "Fusion dining experience",
+      "Traditional music",
+      "Special tasting menus",
+      "Cultural performances",
+      "Community gathering"
+    ]
+  }
+]
