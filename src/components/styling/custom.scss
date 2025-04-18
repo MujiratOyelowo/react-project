@@ -705,3 +705,296 @@ td, th {
     }
   }
 }
+
+/* Admin Panel Styles */
+.admin-container {
+  .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 0 2rem;
+
+    .line {
+      height: 2px;
+      background-color: $brand-gold;
+      flex: 1;
+      max-width: 400px;
+    }
+
+    .admin-container-subtitle {
+      margin: 0;
+      padding: 0 2rem;
+      color: $brand-red;
+      white-space: nowrap;
+      font-family: 'Jua', sans-serif;
+      font-size: 1.75rem;
+    }
+  }
+
+  .admin-container-title {
+    color: $brand-red;
+    font-family: 'Jua', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .table {
+    td {
+      vertical-align: middle;
+
+      .btn {
+        padding: 0.25rem 0.5rem;
+        margin-right: 0.25rem;
+        
+        &:last-child {
+          margin-right: 0;
+        }
+
+        svg {
+          margin: 0;
+        }
+
+        &.btn-danger {
+          background-color: $brand-red !important;
+          border-color: darken($brand-red, 10%) !important;
+          
+          &:hover {
+            background-color: darken($brand-red, 15%) !important;
+          }
+        }
+
+        &.btn-success {
+          background-color: $brand-green !important;
+          border-color: darken($brand-green, 10%) !important;
+          
+          &:hover {
+            background-color: darken($brand-green, 15%) !important;
+          }
+        }
+
+        &.btn-primary {
+          background-color: #0d6efd !important;
+          border-color: darken(#0d6efd, 10%) !important;
+          
+          &:hover {
+            background-color: darken(#0d6efd, 15%) !important;
+          }
+        }
+      }
+    }
+  }
+
+  .badge {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.65rem;
+    
+    &.bg-warning {
+      background-color: #ffc107 !important;
+      color: #000;
+    }
+    
+    &.bg-success {
+      background-color: $brand-green !important;
+    }
+
+    &.bg-brand-red {
+      background-color: $brand-red !important;
+      color: #fff;
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+
+    .action-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      position: relative;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+
+      &.btn-success {
+        background-color: $brand-green !important;
+        border: 1px solid $brand-gold !important;
+        
+        &:hover {
+          background-color: darken($brand-green, 10%) !important;
+        }
+
+        svg {
+          color: #fff;
+        }
+      }
+
+      &.btn-brand-red {
+        background-color: $brand-red !important;
+        border: 1px solid $brand-gold !important;
+        
+        &:hover {
+          background-color: darken($brand-red, 10%) !important;
+        }
+
+        svg {
+          color: #fff;
+        }
+      }
+
+      svg {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  td {
+    vertical-align: middle;
+    text-align: center;
+
+    &.action-buttons {
+      min-width: 85px;
+    }
+  }
+
+  .table {
+    th, td {
+      padding: 0.75rem;
+    }
+  }
+}
+
+/* Delete Confirmation Modal Styles */
+.delete-confirmation-modal {
+  .modal-content {
+    background-color: $brand-off-white;
+    border: 2px solid $brand-gold;
+    border-radius: 8px;
+  }
+
+  .modal-header {
+    background-color: $brand-red;
+    border-bottom: 2px solid $brand-gold;
+    padding: 1rem;
+
+    .modal-title {
+      color: #fff;
+      font-family: 'Jua', sans-serif;
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+
+      .warning-icon {
+        color: $brand-gold;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .btn-close {
+      filter: brightness(0) invert(1);
+      opacity: 0.8;
+      
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 1.5rem;
+    
+    p {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: $brand-red;
+
+      &.text-muted {
+        font-size: 0.9rem;
+        color: #666 !important;
+      }
+    }
+
+    .cancellation-message {
+      background-color: #fff;
+      border: 1px solid $brand-gold;
+      border-radius: 4px;
+      padding: 0.75rem;
+      font-size: 1rem;
+      resize: vertical;
+      min-height: 100px;
+      
+      &:focus {
+        border-color: $brand-green;
+        box-shadow: 0 0 0 0.2rem rgba(34, 139, 34, 0.25);
+      }
+    }
+
+    .reservation-details {
+      background-color: rgba($brand-gold, 0.1);
+      border: 1px solid $brand-gold;
+      border-radius: 4px;
+      padding: 1rem;
+      margin-top: 1rem;
+
+      h6 {
+        color: $brand-red;
+        font-family: 'Jua', sans-serif;
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
+      }
+
+      p {
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+        color: #333;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .modal-footer {
+    border-top: 2px solid $brand-gold;
+    padding: 1rem;
+    
+    .btn {
+      padding: 0.5rem 1.5rem;
+      font-weight: 500;
+      min-width: 100px;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+
+    .btn-secondary {
+      background-color: #6c757d !important;
+      border: 1px solid $brand-gold !important;
+      
+      &:hover {
+        background-color: darken(#6c757d, 10%) !important;
+      }
+    }
+
+    .btn-danger {
+      background-color: $brand-red !important;
+      border: 1px solid $brand-gold !important;
+      
+      &:hover {
+        background-color: darken($brand-red, 10%) !important;
+      }
+    }
+  }
+}
