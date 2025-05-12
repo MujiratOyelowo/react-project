@@ -2,7 +2,7 @@
   "name": "todo-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://<MujiratOyelowo>.github.io/<react-project>",
+  "homepage": "https://MujiratOyelowo.github.io/react-project",
   "dependencies": {
     "@react-google-maps/api": "^2.20.6",
     "@reduxjs/toolkit": "^2.6.1",
